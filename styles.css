@@ -1803,9 +1803,10 @@ button[type="submit"]:after,
   border: 1px solid var(--dark) !important;
   transition: var(--trans);
 }
-/*Hide for Blog Pages*/
+/*Hide for blog, portfolio, and events*/
 .item-pagination[data-collection-type^="blog"],
-.item-pagination[data-collection-type^="portfolio"] {
+.item-pagination[data-collection-type^="portfolio"],
+.item-pagination[data-collection-type^="event"] {
   display: none!important;
 }
 /*Pagination Blog + Events*/
