@@ -3114,13 +3114,12 @@ section.vertical-alignment--bottom .content-wrapper {
 /*Full Screen ("1" Custom Fill + Vertical Alignment)*/
 @media screen and (min-width: 767px) {
   section[data-current-styles*='"customSectionHeight": 1'].vertical-alignment--top {
-    min-height: 100vh!important;
-    max-height: 100vh!important;
     overflow: hidden!important;
   }
   section[data-current-styles*='"customSectionHeight": 1'].vertical-alignment--top .image-block {
     min-height: 100vh!important;
     max-height: 100vh!important;
+    height: 100vh!important;
   }
 }
 section[data-current-styles*='"customSectionHeight": 1'].vertical-alignment--top .content-wrapper {
