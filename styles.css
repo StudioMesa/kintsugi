@@ -1,4 +1,4 @@
-/*Kintsugi CSS — Updated 8/10/2024*/
+/*Kintsugi CSS — Updated 09/08/2024*/
 /*Site Background Color*/
 body {
   background-color: var(--body-background) !important;
@@ -441,7 +441,6 @@ button[type="submit"],
 button[type="submit"]:after,
 .join-button:after,
 .course-item__next-lesson-button:after {
-  display: flex!important;
   content: "→";
   font-family: var(--inter), var(--body), sans-serif !important;
   font-feature-settings: var(--inter-features);
