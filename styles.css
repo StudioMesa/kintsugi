@@ -1,4 +1,4 @@
-/*Kintsugi CSS — Updated 09/08/2024*/
+/*Kintsugi CSS — Updated 09/18/2024*/
 /*Color Settings*/
 /*White 1*/
 [data-section-theme="white"] {
@@ -1508,11 +1508,11 @@ button[type="submit"]:after,
   }
 }
 .sqs-gallery-design-autogrid .summary-item .summary-content {
-  padding: 20px 30px;
+  padding: 30px;
 }
 @media screen and (max-width: 767px) {
   .sqs-gallery-design-autogrid .summary-item .summary-content {
-    padding: 20px 30px 30px 30px!important;
+    padding: var(--sqs-mobile-site-gutter);
   }
 }
 .sqs-gallery-design-autogrid .summary-metadata-item {
@@ -2447,6 +2447,11 @@ section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-b
 }
 .blog-basic-grid .blog-basic-grid--text {
   padding: 30px!important;
+}
+@media screen and (max-width: 767px) {
+  .blog-basic-grid .blog-basic-grid--text {
+    padding: var(--sqs-mobile-site-gutter) !important;
+  }
 }
 .blog-basic-grid .blog-article-spacer {
   display: none;
