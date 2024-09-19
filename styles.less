@@ -1,4 +1,4 @@
-/*Kintsugi CSS — Updated 09/08/2024*/
+/*Kintsugi CSS — Updated 09/18/2024*/
 @fe-block-height:25.8px;
 
 /*Color Settings*/
@@ -1312,9 +1312,9 @@ min-height:444px!important;}}
   
 /*Summary Content Wrapper*/
 .summary-item .summary-content{
-padding: 20px 30px;
-@media screen and (max-width:767px){ 
-padding: 20px 30px 30px 30px!important;}}
+padding:30px;
+@media screen and (max-width:767px){
+padding: var(--sqs-mobile-site-gutter);}}
 
 /*Summary Meta*/
 .summary-metadata-item{
@@ -2110,7 +2110,9 @@ padding: 0px 1px 0px 4px;}
 
 /*Blog Item Card*/
 .blog-basic-grid--text{
-padding:30px!important;}
+padding:30px!important;
+@media screen and (max-width:767px){
+padding:var(--sqs-mobile-site-gutter)!important;}}
 
 /*Remove Blog Grid Spacer*/
 .blog-article-spacer{
