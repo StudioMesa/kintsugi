@@ -1146,7 +1146,6 @@ button[type="submit"]:after,
 }
 .user-items-list-carousel[data-current-context*='"mediaAspectRatio": "1:1"'] .list-item-content__title {
   padding: 6%;
-  display: flex;
   margin: 0!important;
   font-size: 22px!important;
   font-weight: 400;
