@@ -1,4 +1,4 @@
-/*Kintsugi CSS — Updated 09/24/2024*/
+/*Kintsugi CSS — Updated 10/06/2024*/
 /*Color Settings*/
 /*White 1*/
 [data-section-theme="white"] {
@@ -1115,7 +1115,7 @@ button[type="submit"]:after,
   /*Mobile Item Padding*/
 }
 .user-items-list-carousel[data-current-context*='"mediaAspectRatio": "1:1"'] .list-item {
-  border-radius: var(--universal-br) !important;
+  border-radius: var(--global-radius) !important;
   overflow: hidden;
 }
 .user-items-list-carousel[data-current-context*='"mediaAspectRatio": "1:1"'] .user-items-list-carousel__gutter {
