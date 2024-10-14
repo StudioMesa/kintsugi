@@ -2486,7 +2486,8 @@ section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-b
 .blog-basic-grid .blog-list-pagination .older {
   flex: unset!important;
 }
-.blog-basic-grid--container .entry .blog-item {
+.blog-basic-grid--container .entry .blog-item,
+.blog-basic-grid .blog-basic-grid--container {
   opacity: 1!important;
   transform: translate(0) !important;
 }
