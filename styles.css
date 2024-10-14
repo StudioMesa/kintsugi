@@ -1,4 +1,4 @@
-/*Kintsugi CSS — Updated 10/06/2024*/
+/*Kintsugi CSS — Updated 10/13/2024*/
 /*Color Settings*/
 /*White 1*/
 [data-section-theme="white"] {
@@ -2485,6 +2485,10 @@ section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-b
 .blog-basic-grid .blog-list-pagination .newer,
 .blog-basic-grid .blog-list-pagination .older {
   flex: unset!important;
+}
+.blog-basic-grid--container .entry .blog-item {
+  opacity: 1!important;
+  transform: translate(0) !important;
 }
 /*Hide Archive Block*/
 .sqs-block.archive-block.sqs-block-archive {
