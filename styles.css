@@ -2491,6 +2491,11 @@ section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-b
   opacity: 1!important;
   transform: translate(0) !important;
 }
+.blog-item .image-wrapper.preFlex {
+  opacity: 1!important;
+  transform: unset!important;
+  clip-path: unset!important;
+}
 /*Hide Archive Block*/
 .sqs-block.archive-block.sqs-block-archive {
   display: none!important;
