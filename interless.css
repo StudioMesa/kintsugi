@@ -100,20 +100,6 @@ h2 em {
   font-family: var(--custom-font), var(--heading), serif !important;
   font-weight: var(--heading-weight) !important;
 }
-/*Body Font*/
-.sqsrte-small,
-p,
-.sqsrte-large,
-.header-nav-item {
-  font-weight: var(--body-weight) !important;
-  font-feature-settings: var(--inter-features) !important;
-  font-family: var(--inter), var(--body), sans-serif !important;
-}
-/*Text Logo Font*/
-.header-title-text {
-  font-feature-settings: var(--inter-features) !important;
-  font-family: var(--inter), var(--body), sans-serif !important;
-}
 /*Mega Font H1 + H2*/
 h1 strong,
 h2 strong {
@@ -132,19 +118,12 @@ h2 strong {
 h3 {
   margin-bottom: 0;
   letter-spacing: -0.01em;
-  font-weight: var(--body-weight) !important;
-  font-feature-settings: var(--inter-features) !important;
-  font-family: var(--inter), var(--body), sans-serif !important;
 }
 /*Mega H3*/
 H3 strong {
   line-height: 0.9 !important;
   font-size: 1.3em !important;
   font-style: normal;
-  font-weight: var(--body-weight) !important;
-  font-feature-settings: var(--inter-features);
-  font-family: var(--inter), var(--body), sans-serif;
-  letter-spacing: -0.01em !important;
 }
 /*Custom List Items*/
 ul[data-rte-list] {
@@ -248,16 +227,14 @@ p a em {
   line-height: 1.8 !important;
   position: relative;
   font-style: normal;
-  font-weight: var(--button-weight) !important;
 }
 @media screen and (min-width: 767px) {
   p a em:after {
-    font-family: var(--inter), var(--body), sans-serif !important;
+    font-family: var(--arrows) !important;
     content: "→";
     position: absolute;
     opacity: 0;
     transition: var(--trans);
-    font-weight: var(--body-weight) !important;
   }
   p a em:hover:after,
   h3 a em:hover:after {
@@ -271,11 +248,10 @@ p a strong {
   line-height: 1.5 !important;
   position: relative;
   font-style: normal;
-  font-weight: var(--body-weight) !important;
 }
 p a strong:after,
 h3 a strong:after {
-  font-family: var(--inter), var(--body), sans-serif !important;
+  font-family: var(--arrows) !important;
   content: "→";
   padding-left: 2px;
   position: absolute;
@@ -309,14 +285,13 @@ body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-
 }
 /*Folder Title Chevron*/
 .header-nav-folder-title:after {
-  font-family: var(--inter), var(--body), sans-serif !important;
+  font-family: var(--arrows) !important;
   z-index: -1 !important;
   position: absolute!important;
   right: 0!important;
   content: "⌵" !important;
   transform: rotateZ(0deg);
   line-height: 0.7 !important;
-  font-weight: 500!important;
   transition: var(--trans) !important;
 }
 /*Flip Chevron When Open*/
@@ -393,7 +368,6 @@ body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-
 }
 .header-layout-nav-left .header-nav-list .header-nav-item:not(.header-nav-folder-item):last-of-type a {
   user-select: none!important;
-  font-weight: var(--button-weight) !important;
   padding: var(--primary-button-padding-y) var(--primary-button-padding-x);
   line-height: normal!important;
   background: transparent!important;
@@ -423,9 +397,6 @@ body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-
   border: 1px solid rgba(0, 0, 0, 0.2) !important;
 }
 .header-layout-nav-left .header-menu-nav-wrapper .header-menu-nav-item:last-of-type a {
-  font-weight: var(--body-weight) !important;
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   font-size: 1rem!important;
 }
 /*Mobile Nav Wraper*/
@@ -447,18 +418,12 @@ body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-
 }
 /*Mobile Nav Item*/
 .header-menu-nav-item a {
-  font-weight: var(--body-weight) !important;
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   font-size: var(--mobile-nav-size);
   letter-spacing: -0.015em;
   margin: unset!important;
 }
 /*Mobile Menu Button*/
 .header-menu-cta a {
-  font-weight: var(--body-weight) !important;
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   font-size: 1rem!important;
   padding: 14px!important;
   border: 1px solid var(--menuOverlayButtonBackgroundColor) !important;
@@ -492,9 +457,6 @@ button[type="submit"],
 .course-item__next-lesson-button {
   user-select: none!important;
   overflow: hidden!important;
-  font-weight: var(--button-weight) !important;
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   display: flex!important;
   align-items: center!important;
   justify-content: center!important;
@@ -512,9 +474,7 @@ button[type="submit"]:after,
 .join-button:after,
 .course-item__next-lesson-button:after {
   content: "→";
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
-  font-weight: var(--button-weight) !important;
+  font-family: var(--arrows) !important;
   line-height: 0!important;
   margin-left: 4px;
   transform: rotate(0deg);
@@ -575,9 +535,6 @@ button[type="submit"]:after,
 }
 /*Header Buttons*/
 .header-actions .btn {
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
-  font-weight: var(--body-weight) !important;
   align-items: center;
   justify-content: center;
 }
@@ -612,8 +569,6 @@ button[type="submit"]:after,
 /*Secondary Main*/
 .sqs-button-element--secondary {
   background: transparent!important;
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
 }
 /*Tertiary Button Container*/
 .sqs-block-button-container--left[data-button-type^="tertiary"],
@@ -637,8 +592,7 @@ button[type="submit"]:after,
 .sqs-button-element--tertiary:after {
   display: flex!important;
   content: "→";
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-weight: 500;
+  font-family: var(--arrows) !important;
   line-height: 0!important;
   margin-left: 80px;
   transform: rotate(0deg);
@@ -661,19 +615,6 @@ button[type="submit"]:after,
 .sqs-block-button-container--right[data-button-type^="tertiary"]:hover .sqs-button-element--tertiary:after {
   transform: rotate(180deg) !important;
   transition: transform 0.3s ease;
-}
-/*Accordion Title*/
-.accordion-item__title {
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: -0.01em;
-}
-@media screen and (max-width: 767px) {
-  .accordion-item__title {
-    font-size: 17px;
-    letter-spacing: -0.02em;
-  }
 }
 /*Accordion Item*/
 .accordion-item {
@@ -912,8 +853,6 @@ button[type="submit"]:after,
   margin-right: auto;
 }
 .tweak-blog-item-width-narrow .blog-meta-item a {
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   border-radius: 4px!important;
   background: var(--accent);
   color: var(--white) !important;
@@ -942,9 +881,6 @@ button[type="submit"]:after,
   justify-content: center;
 }
 .tweak-blog-item-width-narrow time.blog-meta-item--date span {
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
-  font-weight: var(--body-weight);
   font-size: 14px!important;
   color: var(--accent);
 }
@@ -1472,7 +1408,6 @@ button[type="submit"]:after,
   /*Carousel Buttons*/
   /*Summary Item*/
   /*Summary Content Wrapper*/
-  /*Summary Meta*/
   /*Summary Date*/
   /*Summary Item Categories*/
   /*Hide Meta Divider*/
@@ -1513,10 +1448,6 @@ button[type="submit"]:after,
     padding: var(--sqs-mobile-site-gutter);
   }
 }
-.sqs-gallery-design-autogrid .summary-metadata-item {
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
-}
 .sqs-gallery-design-autogrid .summary-metadata-item--date {
   margin-left: 10px;
   font-size: 12px!important;
@@ -1550,9 +1481,6 @@ button[type="submit"]:after,
   letter-spacing: -0.03em;
 }
 .sqs-gallery-design-autogrid .summary-excerpt p {
-  font-weight: var(--body-weight) !important;
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   line-height: 1.5 !important;
   font-size: 13px!important;
   display: -webkit-box;
@@ -1600,8 +1528,6 @@ body .sqs-block-summary-v2 .summary-block-setting-design-list .summary-item {
 .sqs-block-summary-v2 .summary-block-setting-design-list {
   -webkit-animation: 0.8s ease 0s normal forwards 1 flexload !important;
   animation: 0.8s ease 0s normal forwards 1 flexload !important;
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   max-width: var(--blog-width) !important;
   margin-left: auto!important;
   margin-right: auto!important;
@@ -1639,9 +1565,6 @@ body .sqs-block-summary-v2 .summary-block-setting-design-list .summary-item {
 .sqs-block-summary-v2 .summary-block-setting-design-list .sqs-gallery-design-list .summary-title a {
   width: 100%!important;
   line-height: inherit!important;
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
-  font-weight: var(--body-weight) !important;
   align-items: center;
   margin-bottom: 0!important;
   transition: var(--trans) !important;
@@ -1650,8 +1573,7 @@ body .sqs-block-summary-v2 .summary-block-setting-design-list .summary-item {
   position: absolute;
   opacity: 0;
   margin-left: -10px;
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-weight: 400;
+  font-family: var(--arrows) !important;
   content: "→";
   transition: var(--trans);
 }
@@ -1678,7 +1600,6 @@ body .sqs-block-summary-v2 .summary-block-setting-design-list .summary-item {
   text-transform: uppercase;
   text-align: right;
   opacity: 1!important;
-  font-weight: var(--bold-weight);
 }
 @media screen and (max-width: 767px) {
   .sqs-block-summary-v2 .summary-block-setting-design-list .sqs-gallery-design-list .summary-metadata-item {
@@ -1688,7 +1609,6 @@ body .sqs-block-summary-v2 .summary-block-setting-design-list .summary-item {
 .sqs-block-summary-v2 .summary-block-setting-design-list .sqs-gallery-design-list .summary-metadata-item--cats,
 .sqs-block-summary-v2 .summary-block-setting-design-list .sqs-gallery-design-list .summary-metadata-item.summary-metadata-item--date,
 .sqs-block-summary-v2 .summary-block-setting-design-list .sqs-gallery-design-list .summary-metadata-item--tags {
-  font-family: var(--inter), var(--body), sans-serif !important;
   border-radius: 4px!important;
   background: var(--secondary-color);
   border: none;
@@ -1970,8 +1890,6 @@ body .sqs-block-summary-v2 .summary-block-setting-design-list .summary-item {
 }
 /*Field Title*/
 .sqs-block-form .field-list .title {
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   position: relative!important;
   width: fit-content !important;
 }
@@ -1982,8 +1900,6 @@ body .sqs-block-summary-v2 .summary-block-setting-design-list .summary-item {
 .sqs-block-form radio,
 .sqs-block-form checkbox,
 .sqs-block-form .caption-text {
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   transition: var(--trans) !important;
   outline-offset: 3px!important;
   outline: 1px solid transparent;
@@ -1996,15 +1912,9 @@ body .sqs-block-summary-v2 .summary-block-setting-design-list .summary-item {
 .sqs-block-form .caption-text:focus {
   outline: 1px solid var(--tweak-form-block-stroke-color);
 }
-.sqs-block-form ::placeholder {
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
-}
 /*Replace "reqired" with "*" */
 .form-wrapper .field-list .description.required {
   visibility: hidden;
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   font-size: 0!important;
 }
 .form-wrapper .field-list .description.required:after {
@@ -2013,7 +1923,7 @@ body .sqs-block-summary-v2 .summary-block-setting-design-list .summary-item {
   top: 10px;
   right: 0;
   content: '*' !important;
-  font-weight: 600!important;
+  font-family: var(--arrows) !important;
   font-size: 12px;
 }
 /*Newsletter Form*/
@@ -2399,12 +2309,10 @@ section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-b
 }
 .blog-basic-grid .passthrough-link:after {
   transition: var(--trans) !important;
-  font-family: var(--inter), var(--body), sans-serif !important;
+  font-family: var(--arrows) !important;
 }
 .blog-basic-grid .blog-categories {
   pointer-events: none!important;
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   border-radius: 4px!important;
   background: var(--accent);
   color: var(--white) !important;
@@ -2426,9 +2334,6 @@ section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-b
   gap: 5px;
 }
 .blog-basic-grid .blog-excerpt p {
-  font-weight: 400!important;
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   line-height: 1.5 !important;
   font-size: 13px!important;
   letter-spacing: 0.01em !important;
@@ -2438,10 +2343,7 @@ section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-b
   -webkit-box-orient: vertical;
 }
 .blog-basic-grid .blog-date {
-  font-family: var(--inter), var(--body), sans-serif !important;
-  font-feature-settings: var(--inter-features);
   letter-spacing: 0.01em !important;
-  font-weight: 500;
   color: var(--accent-bold);
   font-size: 12px!important;
 }
@@ -2501,7 +2403,7 @@ section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-b
 }
 /*Summary Filters*/
 .filters {
-  font-family: var(--inter), var(--body), sans-serif !important;
+  font-family: var(--body) !important;
   position: relative;
   z-index: 999!important;
   display: flex;
@@ -2875,17 +2777,6 @@ section[data-current-styles*='"customSectionHeight": 13'] {
 .course-item:not(.mobile-layout):not(.nav-align-right) .course-item__header {
   padding-left: var(--sqs-site-gutter) !important;
 }
-/*Course — make things Inter*/
-.course-item__course-title,
-.course-item__next-lesson-button,
-.course-item__side-nav *,
-.course-list__grid-chapter-item-header *,
-.course-list__grid-item *,
-.course-list__progress-bar-container {
-  font-weight: var(--body-weight) !important;
-  font-feature-settings: var(--inter-features) !important;
-  font-family: var(--inter), var(--body), sans-serif !important;
-}
 /*Lesson list padding*/
 .course-item .course-item__side-nav-chapter-lessons .course-item__side-nav-link {
   padding-left: 20px;
@@ -2939,16 +2830,6 @@ section[data-current-styles*='"customSectionHeight": 13'] {
     justify-content: center!important;
   }
 }
-/*Make labels Inter*/
-.product-price,
-.category-link {
-  font-weight: var(--body-weight) !important;
-  font-feature-settings: var(--inter-features) !important;
-  font-family: var(--inter), var(--body), sans-serif !important;
-}
-.category-link.active {
-  font-weight: 600!important;
-}
 /*Event Grid*/
 .eventlist {
   display: grid!important;
@@ -2989,9 +2870,6 @@ section[data-current-styles*='"customSectionHeight": 13'] {
   min-height: 270px!important;
   background: var(--white) !important;
   width: 100%!important;
-  font-weight: var(--body-weight) !important;
-  font-feature-settings: var(--inter-features) !important;
-  font-family: var(--inter), var(--body), sans-serif !important;
   margin-top: 0!important;
 }
 /*Truncate event description*/
@@ -3008,9 +2886,6 @@ section[data-current-styles*='"customSectionHeight": 13'] {
 /*Event Button*/
 .eventlist-button.sqs-button-element--primary {
   margin-top: 20px;
-  font-weight: var(--body-weight) !important;
-  font-feature-settings: var(--inter-features) !important;
-  font-family: var(--inter), var(--body), sans-serif !important;
 }
 /*Thumbnail Image*/
 .eventlist-column-thumbnail {
@@ -3042,11 +2917,6 @@ section[data-current-styles*='"customSectionHeight": 13'] {
   border-radius: var(--global-radius);
 }
 /*Make Date Heading Font*/
-.eventlist-datetag-inner {
-  font-weight: var(--body-weight) !important;
-  font-feature-settings: var(--inter-features) !important;
-  font-family: var(--inter), var(--body), sans-serif !important;
-}
 @media screen and (min-width: 767px) {
   .eventlist-column-info {
     width: 45%;
@@ -3063,7 +2933,7 @@ section[data-current-styles*='"customSectionHeight": 13'] {
 }
 /*Event Back Arrow*/
 .eventitem-backlink::before {
-  font-family: var(--inter), var(--body), sans-serif !important;
+  font-family: var(--arrows) !important;
 }
 /*Event Item Title*/
 .eventitem-title {
