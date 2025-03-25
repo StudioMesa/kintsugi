@@ -1,4 +1,4 @@
-/*Kintsugi CSS — Updated 10/13/2024*/
+/*Kintsugi CSS — Updated 03/24/2025*/
 /*Color Settings*/
 /*White 1*/
 [data-section-theme="white"] {
@@ -2965,6 +2965,10 @@ section[data-current-styles*='"customSectionHeight": 13'] {
   .eventlist {
     grid-template-columns: 1fr;
   }
+}
+/*Hide past events*/
+.eventlist.eventlist--past {
+  display: none!important;
 }
 /*Event Grid Container*/
 .events {
