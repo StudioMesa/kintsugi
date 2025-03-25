@@ -2846,6 +2846,10 @@ section[data-current-styles*='"customSectionHeight": 13'] {
     grid-template-columns: 1fr;
   }
 }
+/*Hide past events*/
+.eventlist.eventlist--past {
+  display: none!important;
+}
 /*Event Grid Container*/
 .events {
   padding-bottom: 0!important;
