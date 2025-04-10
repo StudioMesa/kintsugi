@@ -304,15 +304,16 @@ body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-
   z-index: -1 !important;
   position: absolute!important;
   right: 0!important;
-  top: 25%;
+  top: 40%;
   content: "⌵" !important;
   transform: rotateZ(0deg);
-  line-height: 0.7 !important;
+  line-height: 0!important;
   font-weight: 500!important;
   transition: var(--trans) !important;
 }
 /*Flip custom chevron on hover*/
 .header-nav-item--folder:hover .header-nav-folder-title:not(:has(.header-dropdown-icon)):after {
+  top: 60%!important;
   transform: rotateZ(180deg);
   transition: var(--trans) !important;
 }
