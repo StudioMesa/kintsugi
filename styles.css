@@ -1,4 +1,4 @@
-/*Kintsugi CSS — Updated 03/24/2025*/
+/*Kintsugi CSS — Updated 11/20/2025*/
 /*Color Settings*/
 /*White 1*/
 [data-section-theme="white"] {
@@ -297,10 +297,14 @@ body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-
 .header-burger-btn.burger {
   padding-right: 0!important;
 }
+/*Remove nav item default padding*/
+.header .header-nav-wrapper a,
+.header .language-item a {
+  padding: unset!important;
+}
 /*Folder Title*/
 .header-nav-folder-title {
   position: relative!important;
-  padding-right: 14px!important;
 }
 /*Folder Icon Transition*/
 .header-nav-item--folder .header-dropdown-flip svg,
