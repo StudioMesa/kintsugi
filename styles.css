@@ -1,4 +1,4 @@
-/*Kintsugi CSS — Updated 04/15/2025*/
+/*Kintsugi CSS — Updated 04/16/2025*/
 /*Color Settings*/
 /*White 1*/
 [data-section-theme="white"] {
@@ -1091,14 +1091,14 @@ button[type="submit"]:after,
 .user-items-list-carousel__arrow-icon-path {
   stroke-width: 2.5px;
 }
-.user-items-list-carousel[data-current-context*='"mediaAspectRatio":"16:9"'] {
+.user-items-list-carousel[data-current-context*='"mediaAspectRatio": "16:9"'] {
   /*Desktop Arrow*/
 }
-.user-items-list-carousel[data-current-context*='"mediaAspectRatio":"16:9"'] .user-items-list-carousel__media-container {
+.user-items-list-carousel[data-current-context*='"mediaAspectRatio": "16:9"'] .user-items-list-carousel__media-container {
   border-radius: var(--global-radius) !important;
   overflow: hidden;
 }
-.user-items-list-carousel[data-current-context*='"mediaAspectRatio":"16:9"'] .desktop-arrows.arrows-bottom-wrapper {
+.user-items-list-carousel[data-current-context*='"mediaAspectRatio": "16:9"'] .desktop-arrows.arrows-bottom-wrapper {
   position: absolute;
   top: -240px;
   right: 0;
