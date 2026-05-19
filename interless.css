@@ -2415,7 +2415,8 @@ section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-b
   clip-path: unset!important;
 }
 /*Hide Archive Block*/
-.sqs-block.archive-block.sqs-block-archive {
+.sqs-block.archive-block.sqs-block-archive,
+.sqs-block-website-component.sqs-block-archive {
   display: none!important;
 }
 /*Summary Filters*/
