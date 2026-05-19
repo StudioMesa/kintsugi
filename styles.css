@@ -1,4 +1,4 @@
-/*Kintsugi CSS — Updated 04/20/2025*/
+/*Kintsugi CSS — Updated 05/19/2026*/
 /*Color Settings*/
 /*White 1*/
 [data-section-theme="white"] {
@@ -2513,7 +2513,8 @@ section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-b
   clip-path: unset!important;
 }
 /*Hide Archive Block*/
-.sqs-block.archive-block.sqs-block-archive {
+.sqs-block.archive-block.sqs-block-archive,
+.sqs-block-website-component.sqs-block-archive {
   display: none!important;
 }
 /*Summary Filters*/
