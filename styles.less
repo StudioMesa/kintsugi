@@ -2021,7 +2021,8 @@ color:var(--light)!important;}}}
 
 //---BLOG GRID---//
 /*Adjust section padding*/
-section[data-current-context*='"typeName":"blog-basic-grid"'].collection-type-blog-basic-grid .content, section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-blog-basic-grid .content{
+section[data-current-context*='"typeName":"blog-basic-grid"'].collection-type-blog-basic-grid .content, section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-blog-basic-grid .content,
+section[data-definition-name="website.components.blogList"] .content:has(> .blog-basic-grid.collection-content-wrapper){
 display:flex!important;
 align-items:center!important;
 justify-content:center!important;
